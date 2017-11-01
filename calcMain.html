@@ -1,0 +1,59 @@
+
+<html>
+<head>
+	<title>Calculator freeCodeCamp</title>
+	<script src="math.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div id="mainFrame" class="container">
+		<h1>
+			Electronic Calculator
+		</h1>
+		<form id="calcView">
+			<input type="view" id="resultBox" readonly /> 				
+			<div id="line1" class="row">
+				<div class=col-lg-12> 
+					<input type="button" class="button"value= "C" onclick="calcView.resultBox.value = ''"/>
+					<input type="button" class="button"value= "B" onclick="calcView.resultBox.value = ' '"/>
+					<input type="button" class="button"value= "%" onclick="calcView.resultBox.value = '%'"/>
+					<input type="button" class="button"value = "+" onclick="calcView.resultBox.value +='+' " />
+				</div>
+			</div>
+			<div id="line2" class="row">
+				<div class=col-lg-12> 
+					<input type="button" class="button"value = "7" onclick="calcView.resultBox.value +='7' " />
+					<input type="button" class="button"value = "8" onclick="calcView.resultBox.value +='8' " />
+					<input type="button" class="button"value = "9" onclick="calcView.resultBox.value +='9' " />
+					<input type="button" class="button"value = "x" onclick="calcView.resultBox.value +='*' " />
+				</div>
+			</div>
+			<div id="line3" class="row">
+				<div class=col-lg-12> 
+					<input type="button" class="button"value = "4" onclick="calcView.resultBox.value +='4' " />
+					<input type="button" class="button"value = "5" onclick="calcView.resultBox.value +='5' " />
+					<input type="button" class="button"value = "6" onclick="calcView.resultBox.value +='6' " />
+					<input type="button" class="button"value = "-" onclick="calcView.resultBox.value +='-' " />
+				</div>
+			</div>
+			<div id="line4" class="row"> 
+				<div class="col-lg-12"> 
+					<input type="button" class="button"value = "3" onclick="calcView.resultBox.value +='3' " />
+					<input type="button" class="button"value = "2" onclick="calcView.resultBox.value +='2' " />
+					<input type="button" class="button"value = "1" onclick="calcView.resultBox.value +='1' " />
+					<input type="button" class="button"value = "/" onclick="calcView.resultBox.value +='/' " />
+				</div>
+			</div>
+			<div id="line5" class="row">
+				<div class=col-lg-12> 
+					<input type="button" class="button"value = "0" onclick="calcView.resultBox.value +='0' " />
+					<input type="button" class="button"value = "." onclick="calcView.resultBox.value +='.' " />
+					<input type="button" class="button"value = "+/-" onclick="calcView.resultBox.value +='+/-' " />
+					<input type="button" class="button"value = "=" onclick="calcView.resultBox.value = eval(calcView.resultBox.value)"/>
+				</div>
+			</div>
+		</form>			
+	</div>
+</body>
